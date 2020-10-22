@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test markup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="container position-relative">
+          <div class="header__top">
+            <a href="#" class="header__logo">
+              <img src="images/logo.svg" alt="logo">
+            </a>
+            <button class="header__toggle d-block d-md-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="header__user-info user-info d-none d-md-flex">
+              <span class="user-info__name">Arthur Wood</span>
+              <div class="user-info__avatar"style="background-image: url(images/avatar2.png)"></div>
+              <div class="dropdown header__dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="images/icons/icon-arrow.svg" alt="open menu button">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-hide.svg" alt="hide button">
+                    <span class="dropdown-item-text">Hide</span>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-report.svg" alt="report button">
+                    <span class="dropdown-item-text">Report</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__links d-none d-md-flex">
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-ring.svg" alt="notification link">
+              </a>
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-shop.svg" alt="shop link">
+              </a>
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-medium.svg" alt="medium link">
+              </a>
+            </div>
+          </div>
+          <nav class="header__nav nav d-none d-md-flex">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">FEED</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">EXPLORE</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">DISCUSSIONS</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__button btn btn--rounded">
+            <img src="images/icons/icon-plus.svg" alt="button plus" />
+          </button>
+        </div>
+
+        <div class="menu-mobile d-flex d-md-none">
+          <div class="container">
+            <div class="header__user-info user-info">
+              <span class="user-info__name">Arthur Wood</span>
+              <div class="user-info__avatar"style="background-image: url(images/avatar2.png)"></div>
+              <div class="dropdown header__dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="images/icons/icon-arrow.svg" alt="open menu button">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-hide.svg" alt="hide button">
+                    <span class="dropdown-item-text">Hide</span>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-report.svg" alt="report button">
+                    <span class="dropdown-item-text">Report</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__links">
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-ring.svg" alt="notification link">
+              </a>
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-shop.svg" alt="shop link">
+              </a>
+              <a href="#" class="header__link">
+                <img src="images/icons/icon-medium.svg" alt="medium link">
+              </a>
+            </div>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">FEED</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">EXPLORE</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">DISCUSSIONS</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="profile">
+        <div class="container d-block d-lg-flex">
+          <div class="profile__card">
+            <div class="profile__card-info">
+              <div class="profile__card-image" style="background-image: url(images/avatar.png);"></div>
+              <div class="profile__card-text">
+                <span class="profile__card-user-name">Benjamin Clementine</span>
+                <span class="profile__card-user-nickname">@benclementine</span>
+                <button class="btn btn--text btn--icon btn--underlined profile__card-edit-btn">
+                  <img src="images/icons/icon-edit.svg" alt="edit button">
+                  <span>Edit Profile</span>
+                </button>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="images/icons/icon-3dots.svg" alt="open menu button">
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-report.svg" alt="report button">
+                    <span class="dropdown-item-text">Report User</span>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <img src="images/icons/icon-delete.svg" alt="block button">
+                    <span class="dropdown-item-text">Block User</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <ul class="profile__card-numbers">
+              <li class="profile__card-numbers-item">
+                <span class="profile__card-number">45</span>
+                <span>synths</span>
+              </li>
+              <li class="profile__card-numbers-item">
+                <span class="profile__card-number">110</span>
+                <span>followers</span>
+              </li>
+              <li class="profile__card-numbers-item">
+                <span class="profile__card-number">322</span>
+                <span>following</span>
+              </li>
+            </ul>
+            <div class="profile__card-description">
+              Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+            </div>
+          </div>
+
+          <div class="profile__posts">
+            <div class="profile__posts-control">
+              <span>Public</span>
+              <div class="profile__posts-control-switch custom-switch">
+                <input type="checkbox" id="switch" checked/>
+                <label for="switch"></label>
+              </div>
+              <span>Private</span>
+            </div>
+            <ul class="profile__posts-list">
+              <li class="profile__post">
+                <div class="profile__post-wrapper">
+                  <div class="profile__post-sharing"></div>
+                  <span class="profile__post-name">New air routes that promise cheap flights in</span>
+                  <div class="profile__post-footer">
+                    <div class="profile__post-author">
+                      <div class="profile__post-author-img"></div>
+                      <span class="profile__post-author-name">Gregory Watkins</span>
+                    </div>
+                    <div class="profile__post-controls">
+                      <button class="btn btn--text btn--text-l">Share</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__post">
+                <div class="profile__post-wrapper">
+                  <div class="profile__post-sharing"></div>
+                  <span class="profile__post-name">New air routes that promise cheap flights in</span>
+                  <div class="profile__post-footer">
+                    <div class="profile__post-author">
+                      <div class="profile__post-author-img"></div>
+                      <span class="profile__post-author-name">Gregory Watkins</span>
+                    </div>
+                    <div class="profile__post-controls">
+                      <button class="btn btn--text btn--text-l">Share</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__post">
+                <div class="profile__post-wrapper">
+                  <a href="#" class="profile__post-sharing">
+                    <span class="profile__post-sharing-text">Shared to</span>
+                    <span class="profile__post-sharing-tag">#discussionaboutanimgttddsddd</span>
+                  </a>
+                  <span class="profile__post-name">New air routes that promise cheap flights in</span>
+                  <div class="profile__post-footer">
+                    <div class="profile__post-author">
+                      <div class="profile__post-author-img"></div>
+                      <span class="profile__post-author-name">Gregory Watkins</span>
+                    </div>
+                    <div class="profile__post-controls d-flex">
+                      <div class="profile__post-statistic">
+                        <img src="images/icons/icon-view.svg" alt="view icon">
+                        <span class="profile__post-statistic-text">88</span>
+                      </div>
+                      <div class="profile__post-statistic">
+                        <img src="images/icons/icon-like.svg" alt="view icon">
+                        <span class="profile__post-statistic-text">24</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="profile__post">
+                <div class="profile__post-wrapper">
+                  <a href="#" class="profile__post-sharing">
+                    <img src="images/icons/icon-link.svg" class="profile__post-sharing-icon" alt="link icon">
+                    <span>Shared via weblink</span>
+                  </a>
+                  <span class="profile__post-name">New air routes that promise cheap flights in</span>
+                  <div class="profile__post-footer">
+                    <div class="profile__post-author">
+                      <div class="profile__post-author-img"></div>
+                      <span class="profile__post-author-name">Gregory Watkins</span>
+                    </div>
+                    <div class="profile__post-controls d-flex">
+                      <div class="profile__post-statistic">
+                        <img src="images/icons/icon-view.svg" alt="view icon">
+                        <span class="profile__post-statistic-text">88</span>
+                      </div>
+                      <div class="profile__post-statistic">
+                        <img src="images/icons/icon-like.svg" alt="view icon">
+                        <span class="profile__post-statistic-text">24</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

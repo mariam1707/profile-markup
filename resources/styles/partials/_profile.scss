@@ -1,0 +1,228 @@
+.profile {
+  background-color: $bg-color;
+  padding-top: 72px;
+  min-height: 100vh;
+  height: 100%;
+  @media (max-width: $screen-desktop) {
+    padding: 70px 0;
+  }
+  @media (max-width: $screen-phones) {
+    padding: 50px 0;
+  }
+
+  &__card {
+    color: $dark-grayish-blue;
+    max-width: 360px;
+    @media (max-width: $screen-desktop) {
+      max-width: none;
+    }
+
+    &-info {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      margin-right: 24px;
+      @media (max-width: 340px) {
+        min-width: 120px;
+      }
+    }
+
+    &-text {
+      max-width: 145px;
+    }
+
+    &-user-name {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 600;
+      @media (max-width: 340px) {
+        font-size: 22px;
+      }
+    }
+    
+    &-user-nickname {
+      line-height: 20px;
+      margin: 8px 0 16px;
+      letter-spacing: -0.5px;
+      display: block;
+    }
+
+    &-numbers {
+      margin: 32px 0 23px;
+      display: flex;
+    }
+
+    &-numbers-item {
+      margin-right: 48px;
+      line-height: 24px;
+      text-align: center;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &-number {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-description {
+      line-height: 24px;
+    }
+  }
+
+  &__posts {
+    margin-left: 40px;
+    @media (max-width: $screen-desktop) {
+      margin: 40px 0 0;
+    }
+    @media (max-width: $screen-phones) {
+      margin: 30px 0 0;
+    }
+    
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 62px -12px 0;
+
+      @media (max-width: $wide-screen) {
+        margin: 40px -12px 0;
+      }
+      @media (max-width: $screen-phones) {
+        margin: 30px -12px 0;
+      }
+    }
+
+    &-control {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+
+      &-switch {
+        margin: 0 30px;
+      }
+    }
+  }
+  
+  &__post {
+    width: 50%;
+    min-width: 320px;
+    @media (max-width: $wide-screen) {
+      min-width: auto;
+    }
+    @media (max-width: $screen-phones) {
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+
+    &-wrapper {
+      margin: 12px;
+      padding: 24px;
+      background-color: $white;
+      border-radius: 8px;
+      @media (max-width: $wide-screen) {
+        padding: 20px;
+      }
+    }
+
+    &-sharing {
+      margin-bottom: 10px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+
+      &-tag {
+        display: inline-block;
+        background-color: $light-grayish-blue;
+        border-radius: 6px;
+        padding: 4px;
+        width: 73%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 16px;
+        margin-left: 3px;
+      }
+
+      &-icon {
+        margin-right: 4px;
+      }
+
+      &-text {
+        white-space: nowrap;
+      }
+    }
+
+    &-name {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 44px;
+      display: block;
+      @media (max-width: $wide-screen) {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 38px;
+      }
+      @media (max-width: $screen-tablet) {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 36px;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-author {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #B2B3BB;
+        margin-right: 8px;
+        @media (max-width: $screen-tablet) {
+          min-width: 24px;
+        }
+      }
+
+      &-name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    &-statistic {
+      display: flex;
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 16px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &-text {
+        margin-left: 8px;
+      }
+    }
+  }
+}
